@@ -71,9 +71,9 @@ nav ul li a:hover{
     height: 50vh;
 }
 .text-wrapper{
-    justify-content: right;
-    float: right;
-    border: 10px;
+    position: absolute;
+    justify-content: left;
+    float: left;
 
 }
 .text{
@@ -126,7 +126,7 @@ nav ul li a:hover{
     }
     .logo-shadow{
         transform: translateX(120%);
-        transform: translateY(180%);  
+        transform: translateY(200%);  
         transition: .2s;
     }
     .text{
@@ -172,31 +172,28 @@ nav ul li a:hover{
     }
 }
 
-@media screen and (max-width: 2441px){
+@media screen and (min-width: 1440px) {
+    
     .logo{
-        transform: translateX(120%);
-        transform: translateY(50%);  
-        transition: .1s;
+        display: none;
     }
     .logo-shadow{
-        transform: translateX(120%);
-        transform: translateY(50%);  
-        transition: .2s;
+       display: none;
     }
     .text{
-        font-size: 55px;
+        font-size: 50px;
         display: flex;
         flex-direction: column;
         word-wrap: break-word;
         transition: .3s;
     }
-}
-@media screen and(max-width:1963px) {
-    .logo{
-        display: none;
-    }
-    .logo-shadow{
-        display: none;
+    .main{
+        background-size: cover;
     }
 }
+
+   
+
+
+
 
